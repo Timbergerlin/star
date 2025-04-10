@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .flex-container {
+            border: solid 5px rgb(0, 0, 0);
+            height: 950px;
+            margin: 2%;
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+
+        .card {
+            width: 376px;
+            height: 512px;
+            margin: 40px;
+            top: 200px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover{
+            top:10px;
+            transition: top 1s ease-out 0s;
+            /*z-index: 9999*/;
+            animation-duration: 2s;
+            transform: scale(1.5);
+        }
+
+        .card > .npc{
+            position: absolute;
+            width: 376px;
+            height: 512px;
+            z-index: 0;
+        }
+
+        .card .bg{
+            position: absolute;
+            width: 376px;
+            height: 512px;
+            z-index: -100;
+        }
+
+        .card .fg{
+            position: absolute;
+            width: 376px;
+            height: 512px;
+            z-index: 100;
+        }
+        .card > .name{
+            position: absolute;
+            z-index: 200;
+            font-size: 5rem;
+            color: #fdbbbb;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+<div class="card">
+        <div class="name">卡芙卡</div>
+        <img class="npc" src="https://patchwiki.biligame.com/images/sr/4/40/q3on3ocd2qwlkn2yxbwnguxeb2qeh4u.png" >
+        <img class="bg" src="https://patchwiki.biligame.com/images/sr/a/a7/2ouh10uu2cfj052jdgz0nsm20q42l56.png" />
+        <img class="fg" src="https://patchwiki.biligame.com/images/sr/c/ce/1bq2vaqwavmj6ssh3nrrpg60i4njcaa.png" />
+</div>
+
+<div class="card">
+    <div class="name">飛霄</div>
+    <img class="npc" src="https://patchwiki.biligame.com/images/sr/8/80/54c4yosiw6u24jokmbu9mcnqcj5ov6c.png" >
+    <img class="bg" src="https://patchwiki.biligame.com/images/sr/a/a7/2ouh10uu2cfj052jdgz0nsm20q42l56.png" />
+    <img class="fg" src="https://patchwiki.biligame.com/images/sr/c/ce/1bq2vaqwavmj6ssh3nrrpg60i4njcaa.png" />
+</div>
+
+<div class="card">
+    <div class="name">姬子</div>
+    <img class="npc" src="https://patchwiki.biligame.com/images/sr/0/08/3gv4qax2cdksleouchs6vr0y8jgdg6g.png" >
+    <img class="bg" src="https://patchwiki.biligame.com/images/sr/a/a7/2ouh10uu2cfj052jdgz0nsm20q42l56.png" />
+    <img class="fg" src="https://patchwiki.biligame.com/images/sr/c/ce/1bq2vaqwavmj6ssh3nrrpg60i4njcaa.png" />
+</div>
+
+</div>
+</body>
+</html>
